@@ -6,7 +6,7 @@ const MIN_DISTANCE_METERS = 5;
 const MIN_SPEED_KMH = 1;
 
 
-function updateSpeed(position) {
+function updateSpeed1(position) {
    Mps = position.coords.speed;
     if (speedMps !== null && speedMps >= 0) {
         const speedKmh = speedMps * 3.6;
@@ -40,7 +40,7 @@ if ('geolocation' in navigator) {
 }
 
 
-function updateSpeed(position) {
+function updateSpeed2(position) {
     const speedMps = position.coords.speed;
     const heading = position.coords.heading;
     const latitude = position.coords.latitude;
