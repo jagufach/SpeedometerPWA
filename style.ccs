@@ -9,3 +9,9 @@ body {
     font-size: 2em;
     margin-top: 2em;
 }
+
+
+.geo-display {
+    font-size: 1.2em;
+    margin-top: 2em;
+}
