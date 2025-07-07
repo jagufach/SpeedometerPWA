@@ -6,7 +6,7 @@ const MIN_DISTANCE_METERS = 3;
 const MIN_SPEED_KMH = 0.25;
 
 
-function updateSpeed(position) {
+function updateSpeed1(position) {
    Mps = position.coords.speed;
     if (speedMps !== null && speedMps >= 0) {
         const speedKmh = speedMps * 3.6;
