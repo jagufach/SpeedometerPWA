@@ -40,7 +40,7 @@ if ('geolocation' in navigator) {
 }
 
 
-function updateSpeed(position) {
+function updateSpeed2(position) {
     const speedMps = position.coords.speed;
     const heading = position.coords.heading;
     const latitude = position.coords.latitude;
@@ -87,7 +87,7 @@ document.getElementById('copyCoords').addEventListener('click', () => {
     });
 });
 
-function updateSpeed3(position) {
+function updateSpeed(position) {
     const currentTime = Date.now();
     if (currentTime - lastUpdateTime < 5000) return;
 
