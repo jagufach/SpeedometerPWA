@@ -62,3 +62,20 @@ function updateSpeed(position) {
     document.getElementById('latitude').textContent = latitude.toFixed(6);
     document.getElementById('longitude').textContent = longitude.toFixed(6);
 }
+
+
+document.getElementById('copyCoords').addEventListener('click', () => {
+    const lat = document.getElementById('latitude').textContent;
+    const lon = document.getElementById('longitude').textContent;
+    const coords = `https://maps.google.com/?q=${lat},${lon}`;
+
+    navigator.clipboard.writeText(coords).then(() => {
+        document.getElementById('copyStatus').textContent = 'Koordinaten kopiert!';
+        setTimeout(() => {
+            document.getElementById('copyStatus').textContent = '';
+        }, 2000);
+    }).catch(err => {
+        document.getElementById('copyStatus').textContent = 'Fehler beim Kopieren.';
+    });
+});
+
