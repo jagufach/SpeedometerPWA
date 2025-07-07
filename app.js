@@ -2,8 +2,8 @@
 let lastUpdateTime = 0;
 let lastLat = null;
 let lastLon = null;
-const MIN_DISTANCE_METERS = 5;
-const MIN_SPEED_KMH = 1;
+const MIN_DISTANCE_METERS = 3;
+const MIN_SPEED_KMH = 0.25;
 
 
 function updateSpeed1(position) {
