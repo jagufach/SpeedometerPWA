@@ -7,7 +7,7 @@ body {
 }
 
 .speed-display {
-    font-size: 2em;
+    font-size: 4em;
     margin-top: 2em;
 }
 
